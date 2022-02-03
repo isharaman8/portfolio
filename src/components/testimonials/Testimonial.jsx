@@ -1,5 +1,5 @@
-import "./testimonial.scss"
+import "./testimonial.scss";
 
 export default function Testimonial() {
-  return <div className="testimonials" id="testmonials"></div>;
+	return <div className="testimonials" id="testimonials"></div>;
 }
