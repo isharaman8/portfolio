@@ -12,19 +12,21 @@
 	.left {
 		flex: 0.5;
 		overflow: hidden;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 
 		.imgContainer {
-			width: 700px;
-			height: 700px;
-			border-radius: 50%;
+			width: fit-content;
+			height: 500px;
 			display: flex;
-			align-items: baseline;
+			align-items: center;
 			justify-content: center;
-			background-color: yellow;
-			float: right;
+			float: center;
 
 			@include mobile {
-				align-items: flex-start;
+				align-items: center;
+				margin-bottom: 0;
 			}
 
 			img {
@@ -48,6 +50,7 @@
 
 			@include mobile {
 				padding-left: 0;
+				justify-content: flex-start;
 				align-items: center;
 			}
 
@@ -72,7 +75,7 @@
 
 				span {
 					font-size: inherit;
-					color: yellow;
+					color: rgb(255, 235, 59);
 				}
 
 				.ityped-cursor {
@@ -92,6 +95,11 @@
 			position: absolute;
 			bottom: 10px;
 			left: 40%;
+
+			@media (max-width: $width) {
+				position: absolute;
+				left: 46%;
+			}
 
 			img {
 				width: 30px;

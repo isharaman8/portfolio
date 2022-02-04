@@ -8,7 +8,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
 			<div className="wrapper">
 				<div className="left">
 					<a href="#intro" className="logo">
-						Genius.
+						Ak.
 					</a>
 					<div className="itemContainer">
 						<LinkedInIcon className="icon" />
