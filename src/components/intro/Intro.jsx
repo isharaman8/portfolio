@@ -28,7 +28,7 @@ export default function Intro() {
 						Full Stack <span ref={textRef}> Web Developer </span>
 					</h3>
 				</div>
-				<a href="#portfolio">
+				<a href="#about">
 					<img src="assets/arrow-down-sign-to-navigate.png" alt="" />
 				</a>
 			</div>

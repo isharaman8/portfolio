@@ -1,0 +1,125 @@
+@import "../../global.scss";
+
+.about {
+	height: 100vh;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	// gap: 20px;
+	align-items: center;
+
+	margin: 0;
+
+	@include ipad {
+		// border: 1px solid black;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+	}
+
+	.aboutPara {
+		// border: 1px solid black;
+		margin: auto;
+		text-align: center;
+		width: 65%;
+		line-height: 1.5em;
+		overflow: visible;
+
+		// @include ipad {
+		// 	border: 1px solid red;
+		// }
+
+		h1 {
+			margin: 20px auto;
+			overflow: hidden;
+		}
+
+		h4 {
+			font-size: 20px;
+			border: 1px solid black;
+			width: fit-content;
+			margin: 10px auto 0 auto;
+			padding: 10px 15px;
+			border-radius: 20px;
+
+			&:hover {
+				background-color: rgb(207, 207, 207);
+				box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+				cursor: pointer;
+			}
+
+			a {
+				color: black;
+				text-decoration: none;
+			}
+		}
+	}
+
+	.techStack {
+		width: 80%;
+		text-align: center;
+		margin-bottom: 30px;
+
+		// @include ipad {
+		// 	border: 1px solid green;
+		// }
+
+		h1 {
+			margin-bottom: 15px;
+		}
+
+		.techWrapper {
+			display: grid;
+			grid-template-columns: repeat(4, 100px);
+			justify-content: center;
+			align-items: center;
+			place-content: center;
+			gap: 30px;
+			scrollbar-width: none;
+
+			&::-webkit-scrollbar {
+				display: none;
+			}
+
+			// @include ipad {
+			// 	display: grid;
+			// 	grid-template-columns: repeat(4, auto);
+			// }
+			@include mobile {
+				display: grid;
+				grid-template-columns: repeat(4, auto);
+			}
+
+			.oneTechStack {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				flex-wrap: wrap;
+				gap: 5px;
+
+				p {
+					@include mobile {
+						font-size: 14px;
+					}
+				}
+
+				img {
+					width: 40%;
+					height: auto;
+
+					@include ipad {
+						width: 30%;
+						height: auto;
+					}
+					@include mobile {
+						height: auto;
+						width: 35%;
+					}
+				}
+			}
+		}
+	}
+}
