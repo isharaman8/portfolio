@@ -1,11 +1,13 @@
 import "./about.scss";
-import { techArr } from "./techStack";
 
 export default function About() {
 	return (
 		<div className="about" id="about">
+			<div className="imgDiv">
+				<img src="assets/my_pic.png" />
+			</div>
 			<div className="aboutPara">
-				<h1>About Me</h1>
+				<h1 className="mainHeading">About Me</h1>
 				<p>
 					I'm an aspiring Web Developer. I have a serious passion for building
 					amazing web applications. I am skilled in developing web apps using
@@ -24,21 +26,9 @@ export default function About() {
 				</h4>
 			</div>
 
-			<div className="techStack">
-				<h1>Tech Stack</h1>
-
-				<div className="techWrapper">
-					{techArr.map((oneTech) => {
-						const { img, name, id } = oneTech;
-						return (
-							<div key={id} className="oneTechStack">
-								<img src={img} alt="" />
-								<p>{name}</p>
-							</div>
-						);
-					})}
-				</div>
-			</div>
+			<a href="#portfolio">
+				<img src="assets/arrow-down-sign-to-navigate.png" alt="" />
+			</a>
 		</div>
 	);
 }

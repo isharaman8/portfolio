@@ -17,7 +17,7 @@ export const projectArr = [
 			"An online pharmacy website where customers can easily get the medicine they need at very low prices and they can easily buy medicine here.",
 			"https://github.com/Rohanverma4/UNIT_2_PROJECT_TESTING",
 			"1",
-			""
+			"https://61ff9721624257b707b4e751--pulsepluspharmacy.netlify.app/"
 		),
 	},
 	{
@@ -27,7 +27,7 @@ export const projectArr = [
 			"An online learning platform which mainly focuses on frontend parts - hence the name frontendmasters.",
 			"https://github.com/jishanpatel7/FrontEndMasters-Website",
 			"2",
-			""
+			"https://safe-woodland-02335.herokuapp.com/"
 		),
 	},
 	{
@@ -37,8 +37,10 @@ export const projectArr = [
 			"A mock api where users can log in and apply for jobs",
 			"https://github.com/isharaman8/Jobs-Api",
 			"3",
-			""
+			"https://serene-brook-67360.herokuapp.com/"
 		),
+	},
+	{
 		...new Project(
 			"threejslandingpage.jpg",
 			"ThreeJS Landing Page",

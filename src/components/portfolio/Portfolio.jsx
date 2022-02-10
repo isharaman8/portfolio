@@ -1,29 +1,25 @@
 import "./portfolio.scss";
 import { projectArr } from "./projects";
-import GitHubIcon from "@material-ui/icons/GitHub";
+import SingleProjectDesc from "./SingleProjectDesc";
 
 export default function Portfolio() {
 	return (
 		<div className="portfolio" id="portfolio">
-			<h1>My Projects</h1>
+			<h1 className="portfolioHeading">My Projects</h1>
 
 			<div className="container">
 				{projectArr.map((oneProject) => {
 					const { img, title, desc, gitLink, id, deployLink } = oneProject;
 
 					return (
-						<div key={id} className="item">
-							<img src={img} alt="" />
-							<h3>
-								<a rel="noreferrer" target="_blank" href={deployLink}>
-									{title}
-								</a>
-								<a rel="noreferrer" target="_blank" href={gitLink}>
-									<GitHubIcon />
-								</a>{" "}
-							</h3>
-							<p>{desc}</p>
-						</div>
+						<SingleProjectDesc
+							img={img}
+							title={title}
+							desc={desc}
+							key={id}
+							gitLink={gitLink}
+							deployLink={deployLink}
+						/>
 					);
 				})}
 			</div>

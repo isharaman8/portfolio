@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 .intro {
-	background-color: white;
+	background-color: $mainLightColor;
 	display: flex;
 
 	@include mobile {
@@ -20,7 +20,12 @@
 		overflow: hidden;
 		display: flex;
 		justify-content: center;
+		margin-left: 40px;
 		align-items: center;
+
+		@include mobile {
+			margin-left: auto;
+		}
 
 		.imgContainer {
 			width: fit-content;
@@ -36,7 +41,7 @@
 			}
 
 			img {
-				max-width: 100%;
+				max-width: 80%;
 				height: auto;
 
 				@include ipad {
@@ -131,11 +136,6 @@
 			img {
 				width: 30px;
 				animation: arrowBlink 2s infinite;
-			}
-			@keyframes arrowBlink {
-				to {
-					opacity: 0;
-				}
 			}
 		}
 	}

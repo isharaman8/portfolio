@@ -1,0 +1,74 @@
+@import "../../global.scss";
+
+.techstack {
+	height: 100vh;
+	background-color: $mainLightColor;
+
+	.skillsHeading {
+		text-align: center;
+		color: $mainColor;
+		font-size: 50px;
+	}
+
+	.wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		@include ipad {
+			display: flex;
+			flex-direction: column-reverse;
+		}
+
+		@include mobile {
+			display: flex;
+			flex-direction: column-reverse;
+		}
+
+		.leftPara {
+			flex: 1;
+			height: 100%;
+
+			@include ipad {
+				margin-top: 30px;
+			}
+
+			ul {
+				li {
+					font-size: 20px;
+					line-height: 2.5em;
+
+					&::before {
+						content: "# ";
+						color: teal;
+						font-weight: 600;
+					}
+				}
+			}
+		}
+		.rightTech {
+			flex: 1;
+			h1 {
+				text-align: center;
+				color: $mainColor;
+				margin-bottom: 20px;
+				font-size: 25px;
+			}
+			.stackIcons {
+				display: grid;
+				grid-template-columns: repeat(4, auto);
+				place-content: center;
+				gap: 20px 50px;
+				img {
+					max-width: 70px;
+					height: auto;
+
+					@include mobile {
+						max-width: 60px;
+						height: auto;
+					}
+				}
+			}
+		}
+	}
+}

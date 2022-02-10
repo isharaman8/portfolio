@@ -28,6 +28,20 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
 				</div>
 
 				<div className="right">
+					<ul className="topBarHrefs">
+						<li onClick={() => setMenuOpen(false)}>
+							<a href="#intro">Home</a>
+						</li>
+						<li onClick={() => setMenuOpen(false)}>
+							<a href="#about">About</a>
+						</li>
+						<li onClick={() => setMenuOpen(false)}>
+							<a href="#techstack">Tech Stack</a>
+						</li>
+						<li onClick={() => setMenuOpen(false)}>
+							<a href="#portfolio">Projects</a>
+						</li>
+					</ul>
 					<div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
 						<span className="line1"></span>
 						<span className="line2"></span>

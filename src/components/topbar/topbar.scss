@@ -3,7 +3,7 @@
 .topbar {
 	width: 100%;
 	height: 70px;
-	background-color: white;
+	background-color: $mainLightColor;
 	color: $mainColor;
 	position: fixed;
 	top: 0;
@@ -53,6 +53,12 @@
 		}
 
 		.right {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			gap: 40px;
+
 			.hamburger {
 				width: 32px;
 				height: 25px;
@@ -67,6 +73,22 @@
 					background-color: $mainColor;
 					transform-origin: left;
 					transition: all 2s ease;
+				}
+			}
+			.topBarHrefs {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				gap: 20px;
+				align-items: center;
+
+				li {
+					font-size: 18px;
+					font-weight: 600;
+					a {
+						text-decoration: none;
+						color: $mainColor;
+					}
 				}
 			}
 		}

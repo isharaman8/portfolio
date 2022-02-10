@@ -31,4 +31,25 @@ export const techArr = [
 	{
 		...new TechStack("redux.png", "Redux", "8"),
 	},
+	{
+		...new TechStack("git.svg", "Git", "9"),
+	},
+	{
+		...new TechStack("heroku.svg", "Heroku", "10"),
+	},
+	{
+		...new TechStack("netlify.svg", "netlify", "10"),
+	},
+	{
+		...new TechStack("npm.svg", "NPM", "10"),
+	},
+	{
+		...new TechStack("postman.svg", "Postman", "11"),
+	},
+	{
+		...new TechStack("sass.svg", "SASS", "10"),
+	},
+	{
+		...new TechStack("typescript.svg", "TypeScript", "11"),
+	},
 ];
