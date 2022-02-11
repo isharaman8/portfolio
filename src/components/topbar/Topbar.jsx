@@ -41,6 +41,9 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
 						<li onClick={() => setMenuOpen(false)}>
 							<a href="#portfolio">Projects</a>
 						</li>
+						<li onClick={() => setMenuOpen(false)}>
+							<a href="#contact">Contact</a>
+						</li>
 					</ul>
 					<div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
 						<span className="line1"></span>

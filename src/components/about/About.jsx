@@ -27,10 +27,6 @@ export default function About() {
 					</a>
 				</h4>
 			</div>
-
-			<a href="#portfolio">
-				<img src="assets/arrow-down-sign-to-navigate.png" alt="" />
-			</a>
 		</div>
 	);
 }

@@ -38,18 +38,18 @@ export const techArr = [
 		...new TechStack("heroku.svg", "Heroku", "10"),
 	},
 	{
-		...new TechStack("netlify.svg", "netlify", "10"),
+		...new TechStack("netlify.svg", "netlify", "11"),
 	},
 	{
-		...new TechStack("npm.svg", "NPM", "10"),
+		...new TechStack("npm.svg", "NPM", "12"),
 	},
 	{
-		...new TechStack("postman.svg", "Postman", "11"),
+		...new TechStack("postman.svg", "Postman", "13"),
 	},
 	{
-		...new TechStack("sass.svg", "SASS", "10"),
+		...new TechStack("sass.svg", "SASS", "14"),
 	},
 	{
-		...new TechStack("typescript.svg", "TypeScript", "11"),
+		...new TechStack("typescript.svg", "TypeScript", "15"),
 	},
 ];

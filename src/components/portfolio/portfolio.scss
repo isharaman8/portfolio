@@ -23,7 +23,7 @@
 			margin-bottom: 20px;
 
 			@include mobile {
-				width: 95%;
+				width: 85%;
 			}
 
 			.wrapper {
@@ -31,9 +31,19 @@
 				justify-content: center;
 				align-items: center;
 
+				@include mobile {
+					display: flex;
+					flex-direction: column-reverse;
+				}
+
 				.leftDesc {
 					flex: 1;
 					margin-left: 30px;
+
+					@include mobile {
+						text-align: center;
+						margin-top: 20px;
+					}
 
 					h1 {
 						margin-bottom: 10px;
@@ -49,6 +59,12 @@
 						justify-content: flex-start;
 						align-items: center;
 						gap: 20px;
+
+						@include mobile {
+							display: flex;
+							justify-content: center;
+							align-items: center;
+						}
 
 						button {
 							font-size: 17px;
@@ -81,11 +97,15 @@
 					display: inherit;
 					overflow: hidden;
 					img {
-						width: 330px;
-						height: 300px;
+						width: 380px;
+						height: 270px;
 						border-radius: 10px;
 						transition: all 1s ease;
 
+						@include mobile {
+							width: 80%;
+							height: 180px;
+						}
 						&:hover {
 							transform: rotate(-15deg);
 						}

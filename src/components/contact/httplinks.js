@@ -30,4 +30,7 @@ export const httpLinksArray = [
 	{
 		...new HttpLink("https://wa.me/919682560897", "whatsapp.png", 5),
 	},
+	{
+		...new HttpLink("mailto:isharaman8@gmail.com", "email.png", 6),
+	},
 ];

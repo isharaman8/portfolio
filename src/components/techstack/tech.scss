@@ -69,6 +69,11 @@
 				grid-template-columns: repeat(4, auto);
 				place-content: center;
 				gap: 20px 50px;
+
+				@include mobile {
+					display: grid;
+					grid-template-columns: repeat(3, auto);
+				}
 				img {
 					max-width: 70px;
 					height: auto;

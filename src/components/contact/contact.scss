@@ -1,101 +1,132 @@
 @import "../../global.scss";
 .contact {
 	background-color: $mainLightColor;
-	display: flex;
+	position: relative;
 
-	@include mobile {
-		flex-direction: column;
-	}
-
-	@include ipad {
-		flex-direction: column;
-	}
-
-	.left {
-		flex: 1;
-		overflow: hidden;
+	.wrapper {
 		display: flex;
-		justify-content: flex-end;
-		align-items: flex-end;
-
-		// @include ipad {
-		// 	border: 1px solid black;
-		// }
-
-		img {
-			height: 80%;
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-
-			@include mobile {
-				width: 60%;
-				margin-top: 50px;
-			}
-		}
-	}
-	.right {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
 		justify-content: center;
-		margin-right: 30px;
-		gap: 20px;
-
-		@include ipad {
-			width: 100%;
-			margin: auto;
-			display: flex;
-			flex-direction: column;
-			justify-content: flex-start;
-			align-items: center;
-		}
+		align-items: center;
+		height: calc(100vh - 130px);
 
 		@include mobile {
-			justify-content: flex-start;
-		}
-
-		h2 {
-			font-size: 30px;
-			overflow: visible;
-
-			@include ipad {
-				margin-top: 50px;
-			}
-		}
-
-		p {
-			overflow: visible;
-		}
-
-		.contactSpan {
 			display: flex;
-			justify-content: center;
-			align-items: center;
-			width: 80%;
-			gap: 20px;
+			flex-direction: column;
+		}
+
+		.left {
+			overflow: hidden;
+			display: flex;
+			justify-content: flex-end;
+			align-items: flex-end;
+			width: 45%;
 
 			@include mobile {
-				height: 40px;
+				width: 100%;
+				overflow: visible;
 			}
 			img {
-				max-width: 60px;
-				height: auto;
-
-				@include ipad {
-					max-width: 60px;
-					height: auto;
-				}
+				width: 60%;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
 
 				@include mobile {
-					max-width: 35px;
-					height: auto;
+					width: 40%;
+					margin-top: 50px;
 				}
+			}
+		}
+		.right {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			margin-right: 30px;
+			gap: 20px;
 
-				&:hover {
-					box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+			@include ipad {
+				width: 100%;
+				margin: auto;
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+				align-items: center;
+			}
+
+			@include mobile {
+				justify-content: flex-start;
+				overflow: visible;
+			}
+
+			h2 {
+				font-size: 30px;
+				overflow: visible;
+
+				@include mobile {
+					margin: 0;
 				}
+			}
+
+			p {
+				overflow: visible;
+
+				@include mobile {
+					margin: 0;
+				}
+			}
+
+			.contactSpan {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: fit-content;
+				overflow: visible;
+				gap: 20px;
+
+				@include mobile {
+					height: 40px;
+				}
+				img {
+					max-width: 60px;
+					height: auto;
+
+					@include ipad {
+						max-width: 60px;
+						height: auto;
+					}
+
+					@include mobile {
+						max-width: 35px;
+						height: auto;
+					}
+
+					&:hover {
+						box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+					}
+				}
+			}
+		}
+	}
+
+	footer {
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		padding: 10px;
+		z-index: 3;
+		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+		text-align: center;
+		height: 30px;
+		padding: 5px auto;
+
+		p {
+			font-size: 20px;
+			font-weight: 500;
+
+			a {
+				text-decoration: none;
+				color: $mainColor;
 			}
 		}
 	}
