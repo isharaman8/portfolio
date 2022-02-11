@@ -6,7 +6,7 @@
 
 	.skillsHeading {
 		text-align: center;
-		color: $mainColor;
+		color: black;
 		font-size: 50px;
 	}
 
@@ -38,6 +38,11 @@
 					font-size: 20px;
 					line-height: 2.5em;
 
+					@include ipad {
+						font-size: 18px;
+						line-height: 2em;
+					}
+
 					&::before {
 						content: "# ";
 						color: teal;
@@ -50,9 +55,14 @@
 			flex: 1;
 			h1 {
 				text-align: center;
-				color: $mainColor;
+				color: black;
 				margin-bottom: 20px;
 				font-size: 25px;
+
+				@include ipad {
+					font-size: 20px;
+					margin-top: 10px;
+				}
 			}
 			.stackIcons {
 				display: grid;

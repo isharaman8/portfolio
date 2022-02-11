@@ -9,10 +9,12 @@ export default function About() {
 			<div className="aboutPara">
 				<h1 className="mainHeading">About Me</h1>
 				<p>
-					I'm an aspiring Web Developer. I have a serious passion for building
-					amazing web applications. I am skilled in developing web apps using
-					MERN stack and I've build many amazing projects which you can see
-					below.
+					Hey, I am Aman Kumar. I'm an aspiring Web Developer. I have a serious
+					passion for building amazing web applications.
+					<p>
+						I am skilled in developing web apps using MERN stack and I've build
+						many amazing projects which you can see below.
+					</p>
 				</p>
 
 				<h4 className="resumeLink">

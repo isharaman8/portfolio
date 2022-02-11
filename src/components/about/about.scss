@@ -1,7 +1,6 @@
 @import "../../global.scss";
 
 .about {
-	height: 100vh;
 	background-color: $mainLightColor;
 	display: flex;
 	justify-content: center;
@@ -56,8 +55,13 @@
 		h1 {
 			margin: 20px auto;
 			overflow: hidden;
+			font-size: 35px;
 		}
 
+		p {
+			line-height: 2em;
+			text-align: justify;
+		}
 		h4 {
 			font-size: 20px;
 			border: 1px solid black;
