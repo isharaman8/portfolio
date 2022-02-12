@@ -20,6 +20,7 @@
 		.left {
 			display: flex;
 			align-items: center;
+
 			.logo {
 				font-size: 40px;
 				font-weight: 700;
@@ -36,6 +37,10 @@
 				display: flex;
 				align-items: center;
 				margin-right: 30px;
+
+				@include ipad {
+					display: none;
+				}
 
 				@include mobile {
 					display: none;
@@ -61,12 +66,18 @@
 			gap: 40px;
 
 			.hamburger {
+				display: none !important;
 				width: 32px;
 				height: 25px;
 				display: flex;
 				flex-direction: column;
 				justify-content: space-between;
 				cursor: pointer;
+				overflow: visible;
+
+				@include ipad {
+					display: flex !important;
+				}
 
 				span {
 					width: 100%;
@@ -82,6 +93,10 @@
 				justify-content: center;
 				gap: 20px;
 				align-items: center;
+
+				@include ipad {
+					display: none;
+				}
 
 				@include mobile {
 					display: none;

@@ -7,6 +7,7 @@
 	.skillsHeading {
 		text-align: center;
 		color: black;
+		margin-top: 10px;
 		font-size: 50px;
 	}
 
@@ -28,9 +29,18 @@
 		.leftPara {
 			flex: 1;
 			height: 100%;
+			box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+			margin-left: 20px;
+			padding: 20px 0;
+			border-radius: 20px;
 
 			@include ipad {
 				margin-top: 30px;
+				box-shadow: none;
+			}
+
+			@include mobile {
+				box-shadow: none;
 			}
 
 			ul {
@@ -52,9 +62,16 @@
 			}
 		}
 		.rightTech {
-			flex: 1;
+			flex: 0.7;
+			margin-right: 80px;
+
+			@include mobile {
+				margin-right: 0;
+			}
+
 			h1 {
 				text-align: center;
+
 				color: black;
 				margin-bottom: 20px;
 				font-size: 25px;

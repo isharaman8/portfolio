@@ -3,6 +3,7 @@
 .intro {
 	background-color: $mainLightColor;
 	display: flex;
+	gap: 10px;
 
 	@include mobile {
 		flex-direction: column;
@@ -16,11 +17,12 @@
 	}
 
 	.left {
+		// border: 1px solid red;
 		flex: 0.5;
 		overflow: hidden;
 		display: flex;
 		justify-content: center;
-		margin-left: 40px;
+
 		align-items: center;
 
 		@include mobile {
@@ -32,11 +34,18 @@
 			height: 500px;
 			display: flex;
 			align-items: center;
-			justify-content: center;
+			justify-content: flex-end;
 			float: center;
+
+			@include ipad {
+				align-items: center;
+				justify-content: center;
+				margin-bottom: 0;
+			}
 
 			@include mobile {
 				align-items: center;
+				justify-content: center;
 				margin-bottom: 0;
 			}
 
@@ -45,8 +54,9 @@
 				height: auto;
 
 				@include ipad {
-					max-width: 80%;
+					max-width: 50%;
 					height: auto;
+					justify-content: center;
 				}
 				@include mobile {
 					max-width: 50%;
@@ -56,11 +66,14 @@
 		}
 	}
 	.right {
+		// border: 1px solid green;
+
 		flex: 0.5;
 		position: relative;
 
 		@include ipad {
 			text-align: center;
+			width: 60%;
 		}
 
 		.wrapper {
@@ -70,10 +83,12 @@
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
-			overflow: visible;
+			text-align: center;
+			align-items: flex-start;
 
 			@include ipad {
-				height: 40%;
+				height: max-content;
+				align-items: center;
 				padding-left: 0;
 			}
 
@@ -90,7 +105,7 @@
 			}
 
 			@include mobile {
-				font-size: 40px;
+				font-size: 30px;
 			}
 
 			h2 {

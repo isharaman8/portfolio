@@ -43,6 +43,7 @@
 					@include mobile {
 						text-align: center;
 						margin-top: 20px;
+						margin-left: 10px;
 					}
 
 					h1 {
@@ -51,6 +52,48 @@
 					}
 					p {
 						line-height: 1.5em;
+
+						@include mobile {
+							text-align: justify;
+						}
+					}
+					.projectTechImages {
+						display: flex;
+						margin: 15px auto;
+						justify-content: flex-start;
+						align-items: center;
+						gap: 10px;
+
+						@include mobile {
+							display: flex;
+							justify-content: center;
+							align-items: center;
+						}
+
+						img {
+							width: 35px;
+							height: 35px;
+						}
+					}
+					.featuresUl {
+						padding: 0;
+						font-size: 14px;
+						line-height: 1.4em;
+						margin-top: 10px;
+
+						@include mobile {
+							text-align: justify;
+						}
+
+						li {
+							list-style: none;
+
+							&::before {
+								content: "➡ ";
+								color: teal;
+								font-weight: 600;
+							}
+						}
 					}
 
 					.hrefButtonSpans {

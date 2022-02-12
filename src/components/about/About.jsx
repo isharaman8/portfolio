@@ -11,12 +11,17 @@ export default function About() {
 				<p>
 					Hey, I am Aman Kumar. I'm an aspiring Web Developer. I have a serious
 					passion for building amazing web applications.
-					<p>
-						I am skilled in developing web apps using MERN stack and I've build
-						many amazing projects which you can see below.
-					</p>
 				</p>
-
+				<p>
+					I am skilled in developing web apps using MERN stack and I've build
+					many amazing projects which you can see below.
+				</p>
+				<p>Apart from coding, I love:</p>
+				<ul className="hobbiesUl">
+					<li>🎧 Listening to music</li>
+					<li>📚 Reading books</li>
+					<li>📝 Solving DS Algo</li>
+				</ul>
 				<h4 className="resumeLink">
 					<a
 						rel="noreferrer"

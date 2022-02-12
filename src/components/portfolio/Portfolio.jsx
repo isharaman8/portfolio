@@ -9,7 +9,16 @@ export default function Portfolio() {
 
 			<div className="container">
 				{projectArr.map((oneProject) => {
-					const { img, title, desc, gitLink, id, deployLink } = oneProject;
+					const {
+						img,
+						title,
+						desc,
+						gitLink,
+						id,
+						deployLink,
+						projectTech,
+						features,
+					} = oneProject;
 
 					return (
 						<SingleProjectDesc
@@ -19,6 +28,8 @@ export default function Portfolio() {
 							key={id}
 							gitLink={gitLink}
 							deployLink={deployLink}
+							projectTech={projectTech}
+							features={features}
 						/>
 					);
 				})}
